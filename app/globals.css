@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #181818;
+  background: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a03478;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a2a66;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, .interactive {
+  transition: all 0.3s ease;
+}
+
+/* Custom focus styles for accessibility */
+button:focus-visible, a:focus-visible {
+  outline: 2px solid #a03478;
+  outline-offset: 2px;
+}
+
+/* Custom slider styles */
+.slider-primary::-webkit-slider-thumb {
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  background: #a03478;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(160, 52, 120, 0.3);
+  transition: all 0.3s ease;
+}
+
+.slider-primary::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(160, 52, 120, 0.4);
+}
+
+.slider-primary::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  background: #a03478;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(160, 52, 120, 0.3);
+  transition: all 0.3s ease;
+}
+
+.slider-primary::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(160, 52, 120, 0.4);
+}

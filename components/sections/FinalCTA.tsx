@@ -63,7 +63,7 @@ export default function FinalCTA() {
       <div className="text-center mt-16">
         <a href="#download">
           <Button variant="gradient" size="lg">
-            Scarica l'app gratuitamente
+            Scarica l&apos;app gratuitamente
           </Button>
         </a>
       </div>

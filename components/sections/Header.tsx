@@ -23,7 +23,7 @@ export default function Header() {
           <div className="flex items-center space-x-3">
             <a href="#download">
               <Button variant="gradient" size="md">
-                Scarica l'app gratuitamente
+                Scarica l&apos;app gratuitamente
               </Button>
             </a>
           </div>

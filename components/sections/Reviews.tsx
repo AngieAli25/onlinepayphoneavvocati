@@ -126,7 +126,7 @@ export default function Reviews() {
 
                   {/* Review Text - Bottom */}
                   <blockquote className="text-base text-gray-700 leading-relaxed">
-                    "{review.text}"
+                    &ldquo;{review.text}&rdquo;
                   </blockquote>
                 </div>
               </div>
